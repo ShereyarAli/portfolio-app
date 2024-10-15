@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  font-family: "Alata", sans-serif;
+}
+body{
+  background-color: #F1EFEF;
+}
+html{
+  scroll-behavior: smooth ;
+}
+.toTopBtn{
+  cursor: pointer;
+  background-color: rgb(0, 0, 0,0.9);
+  color: white;
+  padding-block: 20px;
+  padding-inline: 25px;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.toTopBtn:hover{
+  background-color: rgb(0, 0, 0,0.8);
+  transition: 0.3s;
+}
+.navContainer{
+  min-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-around;
+}
+.navBar{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+li{
+  cursor: pointer;
+  transition: 0.3s;
+}
+li:hover{
+  border-bottom: solid 1px black;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+  0 0 20px rgb(112, 112, 112),
+  0 0 30px rgb(165, 254, 255);
+}
+
+/* Responsive */
+.navContainer>img{
+  width: 30px;
+  cursor: pointer;
+}
+
+.menuNavBar{
+  list-style-type: none;
+  background-color: rgb(255, 255, 255,0.5);
+  border: solid 0.5px black;
+  border-radius: 18px;
+  position: absolute;
+  top: 80px;
+  right: 70px;
+  height: 200px;
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Responsive */
+
+.heroPic{
+  max-width: 250px;
+  border-radius: 50%;
+}
+.heroContainer{
+
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 165px;
+}
+.heroInfo{
+  min-width: 40%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.spanFirst{
+  color: rgba(24, 24, 24, 0.623);
+  font-size: 0.8rem;
+}
+.spanSecond{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.spanThird{
+  color: rgba(24, 24, 24, 0.623);
+  font-size: 1rem;
+}
+.heroButtons{
+  min-width: 30%;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  
+}
+.heroButtons *{
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  border-radius: 20px;
+}
+.contactBtn{
+  border: solid 1px black;
+  color: white;
+  background-color: rgba(2, 131, 145,0.8);
+}
+.contactBtn:hover{
+  transition: 0.5s;
+  color: black;
+  background-color: transparent;
+}
+.cvBtn{
+  text-decoration: none;
+  font-size: 0.8rem;
+  border: solid 1px black;
+  color: black;
+  background-color: transparent;
+}
+
+.cvBtn:hover{
+  transition: 0.5s;
+  color: white;
+  background-color:rgba(2, 131, 145,0.8);
+}
+
+.gitBtn,.gitBtn:active{
+  cursor: pointer;
+  margin: 0;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.gitBtn:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8),
+  0 0 20px rgba(193, 248, 255, 0.7),
+  0 0 30px rgb(165, 254, 255);
+  transition: 0.5s;
+}
+.gitBtn > img{
+  margin: 0;
+  width: 25px;
+}
+.section-1-container{
+  margin-top: 200px;
+  min-height: auto;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.aboutContainer{
+  min-width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3.5rem;
+}
+.expContainer, .educationContainer{
+  padding-block: 30px;
+  min-width: 250px;
+  min-height: max-content;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+
+.expText, .eduText{
+  font-weight: bold;
+}
+.expInfo, .eduInfo{
+  color: rgba(24, 24, 24, 0.623);
+}
+.expContainer > img, .educationContainer > img{
+  width: 40px;
+}
+.aboutInfo{
+text-align: center;
+}
+.section-2-container{
+  padding-block: 10px;
+  min-width: 100%;
+  min-height: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.fullstackContainer{
+  min-width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+}
+.frontendContainer, .backendContainer{
+  min-width: 300px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 1px black;
+  border-color: rgba(24, 24, 24, 0.623);
+  border-radius: 20px;
+}
+.frontendSkills,.backendSkills{
+  width: 100%;
+  min-height: 100px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+}
+.frontendSkills > span, .backendSkills > span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frontendSkills > span >img , .backendSkills > span > img{
+  width: 18px;
+}
+.section-3-container{
+  margin-top: 165px;
+  min-width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.projectContainer{
+  padding-block: 10px;
+  min-width: 100%;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  
+  gap: 2rem;
+}
+@media screen and (max-width: 1150px) {
+  .projectContainer{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 670px) {
+  .projectContainer{
+    grid-template-columns: 1fr;
+  }
+}
+.tictactoeCon>img, .weatherCon>img, .guessGameCon>img,.expenseTrackerCon>img,.movieAppCon>img, .chatZemCon>img{
+  max-width: 100px;
+  aspect-ratio: 3/2;
+}
+
+.tictactoeCon,.weatherCon, .guessGameCon,.expenseTrackerCon,.movieAppCon, .chatZemCon{
+  border: solid 2px rgba(24, 24, 24, 0.623);
+  border-radius: 10%;
+  min-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tictactoeCon>a, .weatherCon>a, .guessGameCon>a,.expenseTrackerCon>a,.movieAppCon>a, .chatZemCon>a,.tictactoeCon>a:active, .weatherCon>a:active, .guessGameCon>a:active,.expenseTrackerCon>a:active,.movieAppCon>a:active, .chatZemCon>a:active{
+  cursor: pointer;
+  padding-block: 10px;
+  padding-inline: 10px;
+  border: solid 1px black;
+  border-radius: 20px;
+  color: black;
+  background-color: transparent;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.tictactoeCon>a:hover, .weatherCon>a:hover, .guessGameCon>a:hover,.expenseTrackerCon>a:hover,.movieAppCon>a:hover, .chatZemCon>a:hover{
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  background-color:rgba(2, 131, 145,0.8);
+}
+.tictactoeCon>p, .weatherCon>p, .guessGameCon>p,.expenseTrackerCon>p,.movieAppCon>p, .chatZemCon>p{
+  font-weight: bold;
+}
+.contactContainer{
+  margin-top: 165px;
+  margin-bottom: 50px;
+  min-width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.contactSubContainer1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.contactSubContainer2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.contactInfo{
+  border: solid 1px black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(75, 75, 75);
+}
+.contactInfo > img{
+  width: 25px;
+}
+.contactSubContainer2 > ul{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactSubContainer2 > p{
+  font-size: 12px;
+  color: rgba(24, 24, 24, 0.623);
+}
