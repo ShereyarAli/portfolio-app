@@ -35,13 +35,13 @@ function Section3(){
           <img src={projectPic4}></img>
           <p>Expense Tracker</p>
           <span>Using React JS</span>
-          <a href='https://github.com/ShereyarAli/Word-Guessing-Game' target="_blank">Link</a>
+          <a href='https://expenseincome-tracker.netlify.app/' target="_blank">Link</a>
       </div>
       <div className='movieAppCon'>
           <img src={projectPic5}></img>
           <p>MovieZem</p>
           <span>Using React JS</span>
-          <a href='https://moviezem.netlify.com' target="_blank">Link</a>
+          <a href='https://moviezem.netlify.app' target="_blank">Link</a>
       </div>
       <div className='chatZemCon'>
           <img src={projectPic6}></img>
